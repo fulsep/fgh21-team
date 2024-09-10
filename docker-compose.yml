@@ -12,7 +12,7 @@ services:
     build: 
       context: backend/
     environment:
-      - APP_URL=http://ubuntu.orb.local:8000
+      - APP_URL=http://dev.fahrul.id
       - APP_PREFIX=/api/v1
       - DB_HOST=db
       - DB_PORT=5432
@@ -30,7 +30,7 @@ services:
     build: 
       context: frontend/
       args:
-        VITE_BACKEND_URL: http://ubuntu.orb.local:8081/api/v1
+        VITE_BACKEND_URL: http://dev.fahrul.id/api/v1
 networks:
   webservices:
     external: true
